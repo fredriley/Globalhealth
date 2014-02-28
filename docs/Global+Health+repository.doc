@@ -1,0 +1,301 @@
+<html>
+    <head>
+        <!-- MS Word on Windows doesn't realise the encoding is UTF-8 unless this meta tag is present -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <base href="https://workspace.nottingham.ac.uk" />
+        <title>Global Health repository</title>
+        <style>
+            body, p, td, table, tr, .bodytext, .stepfield {
+	            font-family: Arial, Helvetica, FreeSans, sans-serif;
+            }
+            .panel {
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid #999;
+                background-color: #f0f0f0;
+            }
+            .noteMacro { border-style: solid; border-width: 1px; border-color: #F0C000; background-color: #FFFFCE; text-align:left;}
+            .warningMacro { border-style: solid; border-width: 1px; border-color: #c00; background-color: #fcc; text-align:left;}
+            .infoMacro { border-style: solid; border-width: 1px; border-color: #69c; background-color: #D8E4F1; text-align:left;}
+            .tipMacro { border-style: solid; border-width: 1px; border-color: #090; background-color: #dfd; text-align:left;}
+            .informationMacroPadding { padding: 5px 0 0 5px; }
+
+            table.infoMacro td, table.warningMacro td, table.tipMacro td, table.noteMacro td, table.sectionMacro td {
+                border: none;
+            }
+
+            .grid {
+                margin: 2px 0px 5px 0px;
+                border-collapse: collapse;
+            }
+            .grid th  {
+                border: 1px solid #ccc;
+                padding: 2px 4px 2px 4px;
+                background: #f0f0f0;
+                text-align: center;
+            }
+            .grid td  {
+                border: 1px solid #ccc;
+                padding: 3px 4px 3px 4px;
+            }            
+        </style>
+    </head>
+
+    <body style="background-color: white; padding: 10px;">
+        <h1>Global Health repository</h1>
+        <p>This document is a draft 'user specification' for a resource repository for the Global Health project, managed by Catrin Evans. Note that due to funding and time constraints, only a pilot repository may be developed in the first instance, which will act both as a usable repository and 'seed' for future funding to develop a fully-featured repository.</p>
+
+<p><b>Contents</b></p>
+<div>
+<ul>
+    <li><a href='#GlobalHealthrepository-Introductionandpurpose'>Introduction and purpose</a></li>
+    <li><a href='#GlobalHealthrepository-Prototype'>Prototype</a></li>
+    <li><a href='#GlobalHealthrepository-Contents'>Contents</a></li>
+<ul>
+    <li><a href='#GlobalHealthrepository-Harvesting'>Harvesting</a></li>
+    <li><a href='#GlobalHealthrepository-Repositoryexposure'>Repository exposure</a></li>
+    <li><a href='#GlobalHealthrepository-Import%2Fexport'>Import/export</a></li>
+</ul>
+    <li><a href='#GlobalHealthrepository-Metadata'>Metadata</a></li>
+<ul>
+    <li><a href='#GlobalHealthrepository-Generatedmetadata'>Generated metadata</a></li>
+    <li><a href='#GlobalHealthrepository-Metadatastandards'>Metadata standards</a></li>
+</ul>
+    <li><a href='#GlobalHealthrepository-Audiences'>Audiences</a></li>
+    <li><a href='#GlobalHealthrepository-UsersandContributors'>Users and Contributors</a></li>
+<ul>
+    <li><a href='#GlobalHealthrepository-Communityofpractice'>Community of practice</a></li>
+</ul>
+    <li><a href='#GlobalHealthrepository-Licence'>Licence</a></li>
+    <li><a href='#GlobalHealthrepository-Interface'>Interface</a></li>
+    <li><a href='#GlobalHealthrepository-Development'>Development</a></li>
+    <li><a href='#GlobalHealthrepository-Furtherdevelopment'>Further development</a></li>
+</ul></div>
+<p><b>Attachments</b></p>
+
+<div class="listAttachmentsDiv">
+        <ul>
+                <li>
+
+            <a href="https://workspace.nottingham.ac.uk/download/attachments/127309535/global_health_learning_outcomes.docx">global_health_learning_outcomes.docx</a>
+
+        </li>
+                <li>
+
+            <a href="https://workspace.nottingham.ac.uk/download/attachments/127309535/Global+Health+Repository+Ideas+v1.pptx">Global Health Repository Ideas v1.pptx</a>
+
+        </li>
+            </ul>
+    </div>
+
+
+
+
+
+
+<h2><a name="GlobalHealthrepository-Introductionandpurpose"></a>Introduction and purpose</h2>
+
+<p>The Global Health project is concerned with issues related to global health and Nursing, in five key areas:</p>
+<ul>
+	<li>Globalisation, health and change</li>
+	<li>Global health issues</li>
+	<li>Nursing development in a global context</li>
+	<li>Cross cultural capabilities</li>
+	<li>Teaching global health: pedagogical perspectives</li>
+</ul>
+
+
+<p>The project requires a 'one-stop shop' for resources (URLs, files, etc) related to global health, with a specific emphasis on nursing's role and contribution. There is a multitude of resources relevant to global health online and in print, but the student or educator has to make considerable effort to track these down on the many different websites, and in the many different journals. The envisaged repository will collate selected external resources, and internal resources (eg lecture notes) provided by School staff, into one easily-accessible and easily-searchable location.The twin aims of the repository will be:</p>
+
+<p>"to provide a framework for developing and sharing resources"</p>
+
+<p>"to highlight nursing's role and contribution"</p>
+
+
+<p>(Catrin Evans - see attached presentation).</p>
+
+<p>The drivers behind the project are the 'internationalisation agendas' of the School of Nursing, Midwifery &amp; Physiotherapy, the University of Nottingham, and UKHE in general.</p>
+
+
+
+<h2><a name="GlobalHealthrepository-Prototype"></a>Prototype</h2>
+
+<p>The repository will be based on an existing resource repository developed by Fred Riley at <a href="http://www.nottingham.ac.uk/~ntzrlo/resourcedb/home">&#104;ttp://www.nottingham.ac.uk/~ntzrlo/resourcedb/home</a>. This system is still in a developmental phase.</p>
+
+<h2><a name="GlobalHealthrepository-Contents"></a>Contents</h2>
+
+<p>The repository will contain URLs (web links) of existing WWW resources and files uploaded by contributors (eg presentations, documents). The files will likely be stored on the University of Nottingham Unix system, unless large media files (eg video, audio) are likely to be contributed, in which case external hosting accounts may be evaluated. Content types would include:</p>
+<ul>
+	<li>academic papers</li>
+	<li>presentations (eg lecture notes)</li>
+	<li>links to media clips (eg YouTube)</li>
+	<li>research materials</li>
+</ul>
+
+
+<p>Content would be contained in three sections:</p>
+
+<ul>
+	<li>external resources</li>
+	<li>contributed resources</li>
+	<li>evidence for good practice (eg "effective strategies")</li>
+</ul>
+
+
+<p>Contributed content would be made available under a Creative Commons licence, so the contributor will have to agree to this before making any contributions.</p>
+
+
+
+
+
+<h3><a name="GlobalHealthrepository-Harvesting"></a>Harvesting</h3>
+
+<p>Where possible, the repository will allow the 'harvesting' of external record sets, if the external site provides machine-readable interfaces (eg RSS feeds, API) to expose its record data. This might be too ambitious for the pilot project as it would result in a large data set in the repository.</p>
+
+
+<h3><a name="GlobalHealthrepository-Repositoryexposure"></a>Repository exposure</h3>
+
+<p>The repository will expose its records using one or more  standards-compliant methods, such as providing RSS feeds, so as to  enable the harvesting of its records by other repository systems (such as <a href="http://www.jorum.ac.uk/">Jorum</a>, <a href="http://unow.nottingham.ac.uk/">U-Now</a>) and thus increase exposure of its records. An API (Application Programming Interface) will be provided to allow external programs to query the repository to return records satisfying specified criteria (eg category, keyword). This is standard practice for OER (Open Educational Resources) repositories.</p>
+
+<h3><a name="GlobalHealthrepository-Import%2Fexport"></a>Import/export</h3>
+
+<p>The repository will enable the import and export of records in CSV (Comma-Separated Values) format, such as can be exported from Excel and other spreadsheets and databases.</p>
+
+
+
+
+
+
+
+<h2><a name="GlobalHealthrepository-Metadata"></a>Metadata</h2>
+
+<p>Resources in the repository would be classified into categories (such as those above, in the Introduction) and catalogued with keywords ('tags'). User-contributed metadata will be kept to a minimum that would nevertheless enable easy resource discovery. The minimum user-contributed fields for a resource would be:</p>
+<div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<th class='confluenceTh'> Field <br class="atl-forced-newline" /> </th>
+<th class='confluenceTh'> Description <br class="atl-forced-newline" /> </th>
+</tr>
+<tr>
+<td class='confluenceTd'> title <br class="atl-forced-newline" /> </td>
+<td class='confluenceTd'> Unique string <br class="atl-forced-newline" /> </td>
+</tr>
+<tr>
+<td class='confluenceTd'> description <br class="atl-forced-newline" /> </td>
+<td class='confluenceTd'> A short free text description of the resource <br class="atl-forced-newline" /> </td>
+</tr>
+<tr>
+<td class='confluenceTd'> URL <br class="atl-forced-newline" /> </td>
+<td class='confluenceTd'> Link to resource (if online) <br class="atl-forced-newline" /> </td>
+</tr>
+<tr>
+<td class='confluenceTd'> subject area(s) <br class="atl-forced-newline" /> </td>
+<td class='confluenceTd'> One or more of the five key areas outlined in Introduction above <br class="atl-forced-newline" /> </td>
+</tr>
+<tr>
+<td class='confluenceTd'> keyword/tag <br class="atl-forced-newline" /> </td>
+<td class='confluenceTd'> one or more 'tags' that the contributor feels describes the resource <br class="atl-forced-newline" /> </td>
+</tr>
+</tbody></table>
+</div>
+
+<p>Optional fields might include:</p>
+<ul>
+	<li>resource type (eg website, paper)</li>
+	<li>resource author(s)</li>
+	<li>resource type (eg website, paper, presentation)</li>
+</ul>
+
+
+<h3><a name="GlobalHealthrepository-Generatedmetadata"></a>Generated metadata</h3>
+
+<p>The following fields will be generated by the system:</p>
+<ul>
+	<li>record contributor</li>
+	<li>record editor</li>
+	<li>date record contributed</li>
+	<li>date record edited</li>
+	<li>file type and size (for uploads)</li>
+</ul>
+
+
+<h3><a name="GlobalHealthrepository-Metadatastandards"></a>Metadata standards</h3>
+
+<p>The metadata used to classify and catalogue resources will be compliant with the Dublin Core (DC) international standard, to facilitate interoperability and harvesting.</p>
+
+
+<h2><a name="GlobalHealthrepository-Audiences"></a>Audiences</h2>
+
+<p>The repository is aimed primarily at educators and students in Higher Education worldwide, although it will be open to all and may be of use and interest to people outside these communities who have an interest in global health and nursing.</p>
+
+<p>In particular, the repository and its contents should be an aid to understanding of nursing cultures and practices in countries outwith the UK, and aid students travelling to these countries for elective modules and student exchanges.</p>
+
+
+<h2><a name="GlobalHealthrepository-UsersandContributors"></a>Users and Contributors</h2>
+
+<p>The repository will be contributory, using 'crowdsourcing' to gather records. Trusted colleagues will be enrolled as resource contributors.</p>
+
+<p>There will be at least 3 user levels:</p>
+<div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<th class='confluenceTh'> Level </th>
+<th class='confluenceTh'> Rights </th>
+<th class='confluenceTh'> Notes <br class="atl-forced-newline" /> </th>
+</tr>
+<tr>
+<td class='confluenceTd'> administrator <br class="atl-forced-newline" /> </td>
+<td class='confluenceTd'> Full <br class="atl-forced-newline" /> </td>
+<td class='confluenceTd'>&nbsp;</td>
+</tr>
+<tr>
+<td class='confluenceTd'> contributor <br class="atl-forced-newline" /> </td>
+<td class='confluenceTd'> Contributors can insert and edit, but not delete, resources </td>
+<td class='confluenceTd'> Contributors can only be created by an administrator <br class="atl-forced-newline" /> </td>
+</tr>
+<tr>
+<td class='confluenceTd'> member <br class="atl-forced-newline" /> </td>
+<td class='confluenceTd'> Suggest resources for inclusion, comment and rate existing resources <br class="atl-forced-newline" /> </td>
+<td class='confluenceTd'> Members can self-register <br class="atl-forced-newline" /> </td>
+</tr>
+</tbody></table>
+</div>
+
+<p>There may also be user groups specifically related to staff groups, eg HELM</p>
+
+<h3><a name="GlobalHealthrepository-Communityofpractice"></a>Community of practice</h3>
+
+<p>The repository contents will be generated by a small circle of contributors, and evaluated and used by a larger 'community of practice'. The hope is to build an active community around the repository so that it becomes a centre of reuse and development. Initially registered users can comment on and rate resources, but perhaps one or more discussion fora may be created to allow discussions on issues generated by resources. This may be ambitious for a pilot project.</p>
+
+
+<h2><a name="GlobalHealthrepository-Licence"></a>Licence</h2>
+
+<p>The repository, and its contents, will be made available under a Creative Commons licence (probably <a href="http://creativecommons.org/licenses/by-nc/3.0/">BY-NC</a>) allowing for non-commercial use with attribution.</p>
+
+<h2><a name="GlobalHealthrepository-Interface"></a>Interface</h2>
+
+<p>The system interface will be made as user-friendly as possible, without compromising system effectiveness, to allow quick and easy resource discovery by browsing and searching. The user will be able to search/browse the database non-linearly via search and tag browsing, and to be able to 'drill down' linearly from top-level topics (eg climate change, poverty) to sub-topics and sub-sub-topics.</p>
+
+
+<h2><a name="GlobalHealthrepository-Development"></a>Development</h2>
+
+<p>The system will be developed in the Open Source PHP framework Codeigniter and use the Open Source Javascript library jQuery for client-side interactivity. Web pages will be rendered in HTML5 and CSS3, and usable in all major web browsers. The system will be designed to be accessible to users with disabilities, guided by accessibility guidelines (eg <a href="http://www.w3.org/TR/WCAG20/">WCAG</a>, <a href="http://www.w3.org/WAI/intro/aria">ARIA</a>). The code will be clearly readable by any competent PHP programmer, and user and technical documentation will be produced.</p>
+
+
+<h2><a name="GlobalHealthrepository-Furtherdevelopment"></a>Further development</h2>
+
+<p>The initial pilot repository will be a 'seed' to attract future funding and development time to create a larger, fully-featured system</p>
+
+<p>Links</p>
+
+<p>Some exemplar sites and useful links:</p>
+
+<p><a href="http://www8.open.ac.uk/africa/heat/heat-resources">HEAT</a> (OU)</p>
+
+<p><a href="http://www.pitt.edu/~super1/">Supercourse </a>(Pittsburgh University)</p>
+
+<p><a href="http://www.u21mdg4health.org/home/">U21 MDG for Health</a> (Universitas 21)</p>
+
+<p><a href="http://globalhealtheducation.org/SitePages/Home.aspx">Global Health Education consortium</a></p>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+/* Custom CALL@Hull styles */
+
+footer
+{
+	border-top: 2px solid #317EAC;
+	clear: both;
+	padding-top: 5px;
+}
+
+#licence
+{
+	display: none;
+}
+
+.social_icon
+{
+	float: right;
+	margin: 5px;
+}
+
+/* jQuery Validate errors */
+.error {color: red; }
+
+/* flashdata messages */
+#infoMessage
+{
+	color: magenta;
+}

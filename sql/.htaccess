@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Globalhealth repository documents"
+AuthUserFile /home/ntzrlo/.htpasswd
+Require valid-user

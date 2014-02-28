@@ -1,0 +1,199 @@
+@charset "utf-8";
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+
+h1 { font-size: 1.2em; }
+h2 {font-size: 1.1em; }
+h3 {font-size: 1.0em; }
+
+td {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+
+th {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight:bold;
+}
+
+/* insert and edit forms - display subjects as checkboxes in a scrolling div */
+#subjects
+{
+
+	height: 12.5em; /* ~200px */
+	width: 20em; /* ~320px */
+	overflow-x: auto;
+	overflow-y: auto;
+	padding-top: 0.5em;
+	padding-right: 0.9em;
+	padding-bottom: 0.5em;
+	padding-left: 0.9em;
+	border: 1px solid #CCC;
+
+}
+
+/* Results page */
+
+#results
+{
+
+}
+
+#results table { 
+
+	spacing: 0;
+	padding: 10;
+	border: 1px solid #62C2CC; 
+
+}
+
+#results thead
+{
+	background-color:#62C2CC;
+	color:#E4F6F8;
+	text-align:left;
+	line-height: 2em;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#results th
+{ 	
+	vertical-align:top;
+	text-align: left; 
+	margin: 0;
+	padding: 3px; width: 20%;
+}
+
+#banner 
+{
+	font-size: 1.2em;	
+	border-bottom: 5px solid #000000;
+	height: 2em;
+}
+
+
+#search
+{
+	text-align: right;
+	background-color:#FF9;
+	margin-left: 80%;
+	position:relative;
+}
+
+#menu
+{
+	background-color: #ffffff;	
+	margin: 0;
+	text-align: left;
+	width: 100%;
+	clear: both;
+}
+
+#menu ul	
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+
+#menu ul li
+{
+	list-style: none;
+	display: inline;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#menu li a
+{
+	color: #F68B1F;
+	text-decoration: none;
+	padding: 5px; 
+	display: block;
+	width: auto;
+    padding:0.5em 0.8em 0.5em 0.8em;
+	
+}
+
+#menu li a:hover
+{
+	background-color: #FDB813; 	
+	color: #ffffff;
+	border: 1px solid #000000;
+
+}
+
+#menu li a.current
+{
+	background-color: #FDB813;	
+	color: #ffffff;
+	border: 1px solid #000000;
+}
+
+#menu li a.login
+{
+	background-color: #445566;
+	float: right;
+}
+
+#bodytext
+{
+	clear: both;
+}
+
+/* Columns for browse page */
+#subjectcol
+{
+	float: left;
+	width: 20%;
+}
+
+#typecol
+{
+	float: left;
+	width: 20%;
+	margin-left: 2em; 	
+}
+
+#tagscol
+{
+	float: left;
+	width: 50%;	
+	margin-left: 2em; 
+}
+
+#footer {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #666666;
+	border-top: 1px solid #000000;
+	text-align:left;
+	clear: both;
+}
+
+#footer img
+{
+	float: right;
+}
+
+.logintext
+{
+	font-size: 0.8em;
+	color:#FDB813;
+}
+
+.error
+{ 
+	color:#903;
+}
+
+.notify
+{ color:#0C3; }
+
