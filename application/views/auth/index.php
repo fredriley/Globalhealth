@@ -19,8 +19,20 @@
 	$this -> load -> view('left_navbar_view', $data);
 	$this -> load -> view('content_start_view', $data);
 ?>
+<p><a href="<?php echo site_url('auth/create_user');?>">Create a new user</a> </p>
 
-<p>Below is a list of the users.</p>
+<?php
+/*  
+Commented out in version 1.0 to prevent a raft of new user groups being created!
+$url = site_url('auth/create_group');
+echo anchor ($url, "Create a group");
+*/
+?>	
+
+<p>Existing users are in the table below. </p>
+<p>If you need help, see the short User administration guide 
+	(<a href="docs/user_admin.rtf">RTF</a>) (<a href="docs/user_admin.odt">Libre Office</a>). This is restricted - when prompted, use <span class="label label-important">globalhealth/squirrels</span> to view it. </p>
+
 
 <div id="infoMessage"><?php echo $message;?></div>
 
@@ -49,7 +61,6 @@
 	<?php endforeach;?>
 </table>
 
-<p><a href="<?php echo site_url('auth/create_user');?>">Create a new user</a> | <a href="<?php echo site_url('auth/create_group');?>">Create a new group</a></p>
 <?php
 	$this -> load -> view ('content_end_view');
 	$this -> load -> view ('footer_view');

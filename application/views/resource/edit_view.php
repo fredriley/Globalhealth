@@ -87,7 +87,55 @@
       </p>
       <p>
         <label for="subject_area" class="label label-important" data-toggle="tooltip" title="Select one or more categories for the resource">Categories</label><br />
-        <?php 
+ 		<table class="table table-bordered"  >
+			<tr>
+				<th>Key area</th>
+				<th>Categories</th>
+			</tr>
+			<tbody>
+			
+			<?php
+			foreach ($keyarea_query->result() as $area)
+			{
+				$key_area_id = $area -> id;
+				$key_area_title = "<strong>" . $area -> title . "</strong>"; ?>
+				<tr>
+					<td style="width: 40%"><?= $key_area_title; ?></td>
+					<td style="width: 60%">
+					<?php
+				
+
+					# Get child categories
+					$child_query = $this -> ResourceDB_model -> get_key_area_children($key_area_id);
+					# Create a subject check box for each child category. 
+					# If a subject has already been attached to this resource, mark it as checked
+					# Array $attached_subjects_ary passed from edit() method in controller holding
+					# the IDs of subjects currently attached to the resource
+					foreach ($child_query -> result() as $child)
+					{
+						$key = $child -> id; 
+						$title = $child -> title;
+						# See if the subject ID exists in the attached subjects array 
+						# i.e. if the subject is already attached to this resource.
+						# If it is, check the checkbox, else leave unchecked. 
+						if (array_key_exists($key, $attached_subjects_ary))
+						{
+							echo form_checkbox("subjects[]", $key, TRUE) . "&nbsp;&nbsp;" . $title . "<br />\n";	
+						}
+						else
+						{
+							echo form_checkbox("subjects[]", $key, FALSE) . "&nbsp;&nbsp;" . $title . "<br />\n";	
+						}
+					} 
+					?>
+					</td>
+				</tr> <?php
+			} ?>
+			</tbody>
+		</table>
+
+ <?php 
+		/*
 		# Display subjects as checkboxes. Each checkbox has the same
 		# name subjects[] which returns an associative array on POST. If the subject is
 		# attached to the resource, check it.
@@ -106,6 +154,7 @@
 				echo form_checkbox("subjects[]", $key, FALSE) . "&nbsp;&nbsp;" . $val . "<br />\n";	
 			}
 		}
+		*/
 		?>
       </div>
       </p>

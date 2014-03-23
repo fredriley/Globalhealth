@@ -400,8 +400,29 @@ class Resource extends CI_Controller {
 		# Get full resource record first 
 		$data['resource_detail_query'] = $this -> ResourceDB_model -> get_resource_detail($resource_id);
 		
+		# Populate form elements. 
+		# Call function in ResourceDB_model to get subject areas
+		# False param indicates that all subjects should be returned, not just those 'in use'
+		# by existing resources
+		$data['subjects_query'] = $this -> ResourceDB_model -> get_subjects(false);
+		# Get key areas (aka top level categories) and shove into an array
+		# Query returns * in key_areas table (id, title, description)
+		$data['keyarea_query'] = $this -> ResourceDB_model -> get_key_areas();
+		# Get subjects attached to this resource, if any. These will be selected in the view
+		$attached_subjects_query =  $this -> ResourceDB_model -> get_resource_subjects($resource_id);
+		$old_subjects_ary = array();
+		# Create 2-D array, subject IDs as keys, subject titles as values
+		foreach ($attached_subjects_query -> result() as $row)
+		{
+			$old_subjects_ary[$row -> id] = $row -> title;
+		}
+		# Pass currently attached subjects to the view page
+		$data['attached_subjects_ary'] = $old_subjects_ary;	
+		# Note parameter in function call - this will return all types, not just those 'in use', 
+		# which is important for an insert form.
+		$data['resource_types_query'] = $this -> ResourceDB_model -> get_resource_types(FALSE);
 		
-		# -- SUBJECTS ---
+/* 		# -- SUBJECTS ---
 		# Get all subjects in the database, to display in the 'subjects' <div> in the view
 		# False param indicates that all subjects should be returned, not just those 'in use'
 		# by existing resources
@@ -416,6 +437,8 @@ class Resource extends CI_Controller {
 		}
 		# Pass currently attached subjects to the view page
 		$data['attached_subjects_ary'] = $old_subjects_ary;	
+		
+*/
 		
 		# -- RESOURCE TYPES ---
 		# False param returns all resource types, not just those 'in use'

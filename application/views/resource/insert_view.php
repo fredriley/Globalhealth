@@ -48,6 +48,7 @@
         <label for="subject_area" class="label label-important" data-toggle="tooltip" title="Select one or more categories for the resource">Categories</label><br />
 		<div class="row-fluid">
 		<div class="span8">
+		<!-- CATEGORIES AND KEY AREAS TABLE --> 
 		<table class="table table-bordered"  >
 			<tr>
 				<th>Key area</th>
